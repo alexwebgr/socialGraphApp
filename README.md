@@ -1,32 +1,31 @@
 # Task Social Graph
-    This task is designed to give people an idea of how a developer would approach software development problems.
+This task is designed to give people an idea of how a developer would approach software development problems.
 
-    Key points of interest would be
+Key points of interest would be
 
-    * the structure the database
-    * the structure of the code
-    * whether or not the solution is extensible
+* the structure the database
+* the structure of the code
+* whether or not the solution is extensible
 
 ### Problem Description
-    The purpose of this task is to create a method of examining a social network.
-    * Each person listed has one or more connections within the group.
-    * Come up with a data structure to store and query the information found in the JSON file found at /data.json.
-    * Create a public API in the language of choice which allows for three basic operations to be
-    executed for a certain person
-        * **Direct friends:** Return those people who are directly connected to the chosen person.
-        * **Friends of friends:** Return those who are two steps away, but not directly connected to the chosen person.
+The purpose of this task is to create a method of examining a social network.
+* Each person listed has one or more connections within the group.
+* Come up with a data structure to store and query the information found in the JSON file found at /data.json.
+* Create a public API in the language of choice which allows for three basic operations to be
+executed for a certain person
+    * **Direct friends:** Return those people who are directly connected to the chosen person.
+    * **Friends of friends:** Return those who are two steps away, but not directly connected to the chosen person.
 
-    The API can be exposed as public functions, a REST-endpoint, a command line interface,
-    whatever fits the chosen technology stack best.
+The API can be exposed as public functions, a REST-endpoint, a command line interface,whatever fits the chosen technology stack best.
 
 ### Requirements
-    * Object oriented design
-    * Provide information on how to setup and use the solution
+* Object oriented design
+* Provide information on how to setup and use the solution
 
 ### Suggestions
-    * VCS should be used
+* VCS should be used
 
-# Implementation
+## Implementation
 
 ### Prerequisites
 1. mysql server - tested on 5.6.12
