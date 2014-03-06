@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>social graph</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+    <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+
+    <script type="text/javascript" src="js/d3/d3.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/mole.js"></script>
+</head>
+<body>
+    <div id="dashboard">
+        <a href="#" class="toggler"> close </a>
+
+        <h2>Dashboard</h2>
+
+        <hr />
+
+        <h4>Description</h4>
+
+        <p>
+            Click on a bubble to see more details about that user.
+        </p>
+
+        <hr />
+
+        <div id="panelWrapper" class="hidden">
+            <h3>User</h3>
+            <hr />
+            <div class="panel">
+                <div>
+                    <h4 class="name"> </h4>
+                </div>
+
+                <div>
+                    Gender :
+                    <span class="gender"></span>
+                </div>
+
+                <div>
+                    Age :
+                    <span class="age"></span>
+                </div>
+
+                <div>
+                    ID :
+                    <span class="id"></span>
+                </div>
+            </div>
+
+            <hr />
+
+            <div id="friendButtons">
+                <a href="api/user/getDirectFriends">getDirectFriends</a>
+                <a href="api/user/getSuggestedFriends">getSuggestedFriends</a>
+            </div>
+        </div>
+
+        <hr id="separator" />
+
+        <div id="friendsWrapper" class="hidden">
+            <h3>Friends</h3>
+            <hr />
+            <div>
+                Friends count :
+                <span class="count"></span>
+            </div>
+
+            <hr />
+
+            <div id="friendHolder"> </div>
+        </div>
+    </div>
+
+    <div id="panelSource" class="hidden">
+        <div class="panel">
+            <div>
+                <h4 class="name"> </h4>
+            </div>
+
+            <div>
+                Gender :
+                <span class="gender"></span>
+            </div>
+
+            <div>
+                Age :
+                <span class="age"></span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

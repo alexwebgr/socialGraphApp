@@ -1,0 +1,131 @@
+html,body,ul,h1,h2,h3,h4,h5,h6,a,p,span,label,input,textarea,li,img,div, fieldset, legend, svg, line, circle, canvas
+{
+    text-decoration:none;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    outline:none;
+    border:0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.link line {
+    stroke: #333;
+}
+
+.link line.separator {
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+.node circle {
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.node text {
+    font: 10px sans-serif;
+    pointer-events: none;
+}
+
+
+.hidden
+{
+    display: none;
+}
+
+#dashboard
+{
+    position: absolute;
+    top:10px;
+    left: 0;
+    width: 190px;
+    background: #f6f6f6;
+    border: 1px solid steelblue;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 10px;
+}
+
+#friendsWrapper
+{
+    overflow: auto;
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+#friendButtons a,
+#dashboard .toggler
+{
+    color: #333;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin: 10px 4px 0;
+    display: block;
+    font-size: 10pt;
+    font-weight: bold;
+
+    background: #add8e6;
+    background: -moz-linear-gradient(top, #add8e6 0%, #4dabe4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#add8e6), color-stop(100%,#4dabe4));
+    background: -webkit-linear-gradient(top, #add8e6 0%,#4dabe4 100%);
+    background: -o-linear-gradient(top, #add8e6 0%,#4dabe4 100%);
+    background: -ms-linear-gradient(top, #add8e6 0%,#4dabe4 100%);
+    background: linear-gradient(to bottom, #add8e6 0%,#4dabe4 100%);
+
+    -webkit-box-shadow: 0 0 3px #666;
+    box-shadow: 0px 0px 2px #666;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, .5);
+}
+
+#dashboard .toggler
+{
+    background: #add8e6;
+    position: absolute;
+    top: 15px;
+    right: -38px;
+    border-top: 0;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding: 3px 5px 5px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+#dashboard a.toggler:hover
+{
+    background: #b7dde9;
+}
+
+#friendButtons a:hover
+{
+    background: #b7dde9;
+    background: -moz-linear-gradient(top, #b7dde9 0%, #61b4e7 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b7dde9), color-stop(100%,#61b4e7));
+    background: -webkit-linear-gradient(top, #b7dde9 0%,#61b4e7 100%);
+    background: -o-linear-gradient(top, #b7dde9 0%,#61b4e7 100%);
+    background: -ms-linear-gradient(top, #b7dde9 0%,#61b4e7 100%);
+    background: linear-gradient(to bottom, #b7dde9 0%,#61b4e7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7dde9', endColorstr='#61b4e7',GradientType=0 );
+}
+
+#friendHolder .panel
+{
+    background: #e5e5e5;
+    background: -moz-linear-gradient(top, #e5e5e5 0%, #ccc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#ccc));
+    background: -webkit-linear-gradient(top, #e5e5e5 0%,#ccc 100%);
+    background: -o-linear-gradient(top, #e5e5e5 0%,#ccc 100%);
+    background: -ms-linear-gradient(top, #e5e5e5 0%,#ccc 100%);
+    background: linear-gradient(to bottom, #e5e5e5 0%,#ccc 100%);
+    border-radius: 5px;
+    margin: 0 0 5px 0;
+    padding: 5px;
+}

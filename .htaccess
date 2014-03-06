@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule api/(.+)/(.+)/(.+)/(.+)$ main.php?controller=$1&action=$2&field=$3&value=$4 [QSA,NC]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule api/(.+)/(.+)/(.+)$ main.php?controller=$1&action=$2&field=$3 [QSA,NC]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule api/(.+)/(.+)$ main.php?controller=$1&action=$2 [QSA,NC]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule api/(.+)$ main.php?controller=$1 [QSA,NC]
+
+</IfModule>
