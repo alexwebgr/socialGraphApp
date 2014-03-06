@@ -38,14 +38,14 @@ The API can be exposed as public functions, a REST-endpoint, a command line inte
     * Internet Explorer 11
 
 ### Installation
-1. clone repo under your server web root. Let's assume http://localhost/socialGraph
-2. run http://localhost/socialGraph/api/db/createDB
-3. run http://localhost/socialGraph/api/user/insertUsers
-4. run http://localhost/socialGraph/api/user/insertFriends
+1. clone repo under your server web root. Let's assume http://localhost/socialGraphApp
+2. run http://localhost/socialGraphApp/api/db/createDB
+3. run http://localhost/socialGraphApp/api/user/insertUsers
+4. run http://localhost/socialGraphApp/api/user/insertFriends
 
 ### Run
-1. go to http://localhost/socialGraph
-2. follow on screen instructions
+1. go to http://localhost/socialGraphApp
+2. follow on-screen instructions
 3. have fun !
 
 ### Feedback
